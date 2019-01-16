@@ -13,7 +13,7 @@
 ![](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/add_output_1.png)
 ![](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/add_output_2.png)
 
-# Nutzung des sub-flows "Dashbutton auswerfen"
+# Nutzung des sub-flows "Dashbutton auswwerten"
 
 * den subflow in einen beliebigen flow ziehen und die outputs mit Aktionen versehen die beim Drücken eines Buttons ablaufen sollen. siehe Beispielscreenshot
 
