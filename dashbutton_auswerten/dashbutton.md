@@ -1,13 +1,16 @@
 # Auswertung von Amazon Dashbuttons mit Redmatic Boardmitteln
 
 ## Erstellung eins sub-flows "Dashbutton auswerten"
+### die dashbuttons müssen eingerichtet und in der Firewall geblockt sein, sonst lösen sie Bestellungen bei amazon aus
 
 
 ![flow](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/subflow.png)
 
-* zuerst den subflow (code) importieren und 
-* anschliessend im switch node die mac-Adressen anpassen (ohne "-" oder ":" )
-* weitere Ausgänge ausgänge im switchnode anlegen und outputs im supbflow entsprechen erhöhen
+* zuerst den [subflow](https://raw.githubusercontent.com/holgerimbery/redmatic_flows/master/dashbutton_auswerten/subflow_dashbutton_auswerten) importieren und 
+* anschliessend im "switch node" die mac-Adressen (ohne "-" oder ":" ) der registrierten Dashbuttons einfügen
+
+* ggf. weitere Ausgänge im switchnode anlegen und outputs im supbflow entsprechen erhöhen
+
 
 
 
