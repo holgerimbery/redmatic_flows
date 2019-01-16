@@ -13,13 +13,17 @@
 ![](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/add_output_1.png)
 ![](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/add_output_2.png)
 
-# Nutzung des sub-flows "Dashbutton auswerten"
+## Nutzung des sub-flows "Dashbutton auswerten"
 
 * den "sub-flow" in einen beliebigen flow ziehen und die "outputs" mit Aktionen versehen, die beim Drücken eines Buttons ablaufen sollen. 
 Siehe Beispielscreenshot (hier Schaltstati invertieren)
 ![beispielflow](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/dashbutton_beispiel.png)
 
 
+## Hintergrund
+der udp-input-node lauscht auf bootp Anfragen, 
+der function-node gibt die mac-Adressen der anfragenden Systeme weiter und
+der switch-node filtert die Anfragen der dashbuttons aus.    
 
 
 
