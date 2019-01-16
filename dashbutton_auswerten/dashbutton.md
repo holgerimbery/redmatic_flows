@@ -6,7 +6,7 @@
 
 ![flow](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/subflow.png)
 
-* zuerst den [subflow](https://raw.githubusercontent.com/holgerimbery/redmatic_flows/master/dashbutton_auswerten/subflow_dashbutton_auswerten) importieren und 
+* zuerst den [subflow](https://raw.githubusercontent.com/holgerimbery/redmatic_flows/master/dashbutton_auswerten/subflow_dashbutton_auswerten.flow) importieren und 
 * anschliessend im "switch node" die mac-Adressen (ohne "-" oder ":" ) der registrierten Dashbuttons einfügen
 
 * ggf. weitere Ausgänge im switchnode anlegen und outputs im supbflow entsprechen erhöhen
@@ -16,7 +16,7 @@
 # Nutzung des sub-flows "Dashbutton auswwerten"
 
 * den subflow in einen beliebigen flow ziehen und die outputs mit Aktionen versehen die beim Drücken eines Buttons ablaufen sollen. siehe Beispielscreenshot
-
+![beispielflow](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/dashbutton_beispiel.png)
 
 
 
