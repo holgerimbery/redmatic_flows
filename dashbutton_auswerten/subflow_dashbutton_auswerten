@@ -1,0 +1,95 @@
+[
+    {
+        "id": "27274ec0.477d32",
+        "type": "subflow",
+        "name": "dashbutton auswerten",
+        "info": "",
+        "in": [],
+        "out": [
+            {
+                "x": 460,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "4d2c0a32.de2794",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 460,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "4d2c0a32.de2794",
+                        "port": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "10f156e0.c68be9",
+        "type": "udp in",
+        "z": "27274ec0.477d32",
+        "name": "",
+        "iface": "",
+        "port": "67",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "buffer",
+        "x": 70,
+        "y": 80,
+        "wires": [
+            [
+                "94bc49a4.4eb12"
+            ]
+        ]
+    },
+    {
+        "id": "94bc49a4.4eb12",
+        "type": "function",
+        "z": "27274ec0.477d32",
+        "name": "mac-Adresse fangen",
+        "func": "var mac = Buffer.alloc(6);\nmsg.payload.copy(mac, targetStart=0, sourceStart=28, sourceEnd=34);\nmsg.mac = mac.toString('hex');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "4d2c0a32.de2794"
+            ]
+        ]
+    },
+    {
+        "id": "4d2c0a32.de2794",
+        "type": "switch",
+        "z": "27274ec0.477d32",
+        "name": "",
+        "property": "mac",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "38f73db9d38b",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "38f73d25e7c6",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    }
+]
