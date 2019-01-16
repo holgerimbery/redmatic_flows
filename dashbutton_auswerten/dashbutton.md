@@ -10,6 +10,8 @@
 * anschliessend im "switch node" die mac-Adressen (ohne "-" oder ":" ) der registrierten Dashbuttons einfügen
 
 * ggf. weitere Ausgänge im switchnode anlegen und outputs im supbflow entsprechen erhöhen
+![](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/add_output_1.png)
+![](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/add_output_2.png)
 
 
 
