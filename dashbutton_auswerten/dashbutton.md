@@ -15,7 +15,7 @@
 
 # Nutzung des sub-flows "Dashbutton auswerten"
 
-* den subflow in einen beliebigen flow ziehen und die outputs mit Aktionen versehen, die beim Drücken eines Buttons ablaufen sollen. 
+* den "sub-flow" in einen beliebigen flow ziehen und die "outputs" mit Aktionen versehen, die beim Drücken eines Buttons ablaufen sollen. 
 Siehe Beispielscreenshot (hier Schaltstati invertieren)
 ![beispielflow](https://github.com/holgerimbery/redmatic_flows/raw/master/dashbutton_auswerten/pictures/dashbutton_beispiel.png)
 
