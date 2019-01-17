@@ -1,10 +1,11 @@
 ## Monitoring der Batteriespannung von Aktoren (hier: HM-CC-RT-DN)
 #### Diese Anleitung setzt eine "InfluxDB" & ein funktionierendes "grafana" voraus. Ein docker-compose File mit armhf kompatiblen images [liegt bei](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/grafana_stack.yml). Hiermit kann auf einem 2ten RaspberryPi mittels Docker mosquitto, grafana, chronograf, telegraf, kapacitor und influxdb gestartet werden
 
-## Monitoring flow erstellen
+
 ![grafana](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/graphana_battery_heating.PNG)
 ![flow](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/flow_battery_heating.PNG)
 
+## Monitoring flow erstellen
 * "rpc event node" konfigurieren
 ![rpc_event_node](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/rpc_event_node_battery_heating.png)
 
