@@ -5,17 +5,17 @@
 ![grafana](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/graphana_battery_heating.PNG)
 ![flow](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/flow_battery_heating.PNG)
 * rpc event node konfigurieren
-![rpc_event_node]()
+![rpc_event_node](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/rpc_event_node_battery_heating.png)
 * function node konfigurieren
-![function_node]()
-der function node schreibt die das zu monitorende Device mit der prefix battery_ in msg.measurement, damit der der influxdb out node universell eingesetzt werden kann (ohne manuelle Konfiguration vom Measurement)
+![function_node](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/function_node_battery_heating.png)
+der function node schreibt den Namen des zu monitorenden Device mit der prefix battery_ in msg.measurement, damit der "influxdb out node" universell eingesetzt werden kann (ohne manuelle Konfiguration vom Measurement)
 * influxdb out node konfigurieren
-![influxdb_out]()
+![influxdb_out](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/influxdb_out_node_battery_heating.png)
 Datenbank konfigurieren
 
 ## grafana konfigurieren
 * dashboards in grafana anlegen
 * ggf. alert, alert notification, sowie alert notification channel (hier pushover) anlegen, bei zu niedrigen Batteriespannung wird dann eine Pushnachricht ausgelöst
-![alert]()
-![alert_nofification]()
-![alert_notification_channel]()
+![alert](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/graphana_alert_battery_heating.png)
+![alert_notification_channel](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/graphana_notification_channel.png)
+![alert_nofification](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/graphana_alert_notification_battery_heating.png)
