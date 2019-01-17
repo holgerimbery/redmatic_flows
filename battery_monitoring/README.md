@@ -13,6 +13,13 @@
 ![function_node](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/function_node_battery_heating.png)
 der function node schreibt den Namen des zu monitorenden Device mit der prefix battery_ in msg.measurement, damit der "influxdb out node" universell eingesetzt werden kann (ohne manuelle Konfiguration vom Measurement)
 
+```
+msg = {"measurement" : "battery_" + msg.topic,
+       "topic" : msg.topic,
+       "payload" : msg.payload};
+return msg;
+```
+
 * "influxdb out node" konfigurieren, vorher über "manage palette" installieren
 ![influxdb_out](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/influxdb_out_node_battery_heating.png)
 Datenbank konfigurieren
