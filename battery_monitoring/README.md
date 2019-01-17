@@ -11,7 +11,7 @@
 
 * "function node" konfigurieren
 ![function_node](https://github.com/holgerimbery/redmatic_flows/raw/master/battery_monitoring/pictures/function_node_battery_heating.png)
-der function node schreibt den Namen des zu monitorenden Device mit der prefix battery_ in msg.measurement, damit der "influxdb out node" universell eingesetzt werden kann (ohne manuelle Konfiguration vom Measurement)
+der function node schreibt den Namen des zu monitorenden Device mit der prefix battery_ in msg.measurement, somit kann der "influxdb out node" universell eingesetzt werden (ohne manuelle Konfiguration vom Measurement)
 
 ```
 msg = {"measurement" : "battery_" + msg.topic,
