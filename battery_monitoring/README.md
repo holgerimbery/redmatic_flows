@@ -1,4 +1,4 @@
-# Monitoring des Batteriespannung von Akoren (hier: HM-CC-RT-DN)
+## Monitoring des Batteriespannung von Aktoren (hier: HM-CC-RT-DN)
 #### Diese Anleitung setzt eine "InfluxDB" & ein funktionierendes "grafana" voraus, ein docker-compose File mit armhf kompatiblen images liegt in diesem repository. Hiermit kann auf einem 2ten Raspberry mittels Docker mosquitto, grafana, chronograf, telegraf, kapacitor und influxdb gestartet werden 
 
 ## Monitoring flow erstellen
